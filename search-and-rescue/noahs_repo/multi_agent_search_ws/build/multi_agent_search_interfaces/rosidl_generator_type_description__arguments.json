@@ -1,0 +1,17 @@
+{
+  "package_name": "multi_agent_search_interfaces",
+  "output_dir": "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/multi_agent_search_interfaces/rosidl_generator_type_description/multi_agent_search_interfaces",
+  "idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/multi_agent_search_interfaces/rosidl_adapter/multi_agent_search_interfaces:msg/AgentMessage.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/multi_agent_search_interfaces/rosidl_adapter/multi_agent_search_interfaces:srv/SetMap.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/multi_agent_search_interfaces/rosidl_adapter/multi_agent_search_interfaces:srv/GetMap.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/multi_agent_search_interfaces/rosidl_adapter/multi_agent_search_interfaces:srv/TargetDetected.idl"
+  ],
+  "include_paths": [
+    "nav_msgs:/opt/ros/kilted/share/nav_msgs",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs"
+  ]
+}

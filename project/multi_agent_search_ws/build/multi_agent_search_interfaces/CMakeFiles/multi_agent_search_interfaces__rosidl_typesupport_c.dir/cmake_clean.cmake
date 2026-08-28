@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/msg/agent_message__type_support.cpp.o"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/msg/agent_message__type_support.cpp.o.d"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/get_map__type_support.cpp.o"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/get_map__type_support.cpp.o.d"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/set_map__type_support.cpp.o"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/set_map__type_support.cpp.o.d"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/target_detected__type_support.cpp.o"
+  "CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_agent_search_interfaces/srv/target_detected__type_support.cpp.o.d"
+  "libmulti_agent_search_interfaces__rosidl_typesupport_c.pdb"
+  "libmulti_agent_search_interfaces__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/multi_agent_search_interfaces/msg/agent_message__type_support.cpp"
+  "rosidl_typesupport_c/multi_agent_search_interfaces/srv/get_map__type_support.cpp"
+  "rosidl_typesupport_c/multi_agent_search_interfaces/srv/set_map__type_support.cpp"
+  "rosidl_typesupport_c/multi_agent_search_interfaces/srv/target_detected__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/multi_agent_search_interfaces__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

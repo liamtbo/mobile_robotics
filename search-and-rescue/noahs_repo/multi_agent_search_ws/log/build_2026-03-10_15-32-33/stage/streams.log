@@ -1,0 +1,254 @@
+[0.008s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage
+[0.055s] -- The C compiler identification is GNU 13.3.0
+[0.106s] -- The CXX compiler identification is GNU 13.3.0
+[0.121s] -- Detecting C compiler ABI info
+[0.200s] -- Detecting C compiler ABI info - done
+[0.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.216s] -- Detecting CXX compiler ABI info
+[0.301s] -- Detecting CXX compiler ABI info - done
+[0.310s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.311s] -- Detecting CXX compile features
+[0.311s] -- Detecting CXX compile features - done
+[0.312s] -- Stage version 4.3.0
+[0.312s] -- Operating system is Linux
+[0.312s] -- Installing Libraries to /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib
+[0.312s] -- Installing Plugins to /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3
+[0.312s] -- Build type RELEASE
+[0.313s] -- Checking for libtool
+[0.320s] -- Checking for required libraries...
+[0.335s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[0.350s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[0.371s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") 
+[0.379s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.513s] -- Found X11: /usr/include   
+[0.513s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[0.586s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[0.587s] -- Looking for gethostbyname
+[0.663s] -- Looking for gethostbyname - found
+[0.663s] -- Looking for connect
+[0.726s] -- Looking for connect - found
+[0.726s] -- Looking for remove
+[0.791s] -- Looking for remove - found
+[0.791s] -- Looking for shmat
+[0.858s] -- Looking for shmat - found
+[0.858s] -- Looking for IceConnectionNumber in ICE
+[0.926s] -- Looking for IceConnectionNumber in ICE - found
+[0.953s] -- Found FLTK: fltk_images;fltk_forms;fltk_gl;fltk  
+[0.955s] -- Checking for optional libraries...
+[0.955s] -- Installation path CMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage
+[0.956s] -- Configuring libstage
+[0.962s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[0.963s] -- Checking for one of the modules 'playercore>=2.1.0'
+[0.977s] --   * Player not detected. If Player is installed but not detected, check your PKG_CONFIG_PATH.
+[0.986s] -- Configuring done (1.0s)
+[1.015s] -- Generating done (0.0s)
+[1.016s] [33mCMake Warning:
+[1.017s]   Manually-specified variables were not used by the project:
+[1.017s] 
+[1.017s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.017s] 
+[1.017s] [0m
+[1.021s] -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage
+[1.028s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage
+[1.029s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage -- -j32 -l32
+[1.075s] [ 11%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_callbacks.cc.o[0m
+[1.075s] [ 11%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/block.cc.o[0m
+[1.075s] [ 11%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/blockgroup.cc.o[0m
+[1.075s] [ 11%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/color.cc.o[0m
+[1.075s] [ 13%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blobfinder.cc.o[0m
+[1.075s] [ 15%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/logentry.cc.o[0m
+[1.076s] [ 16%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_bumper.cc.o[0m
+[1.076s] [ 18%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blinkenlight.cc.o[0m
+[1.076s] [ 11%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_actuator.cc.o[0m
+[1.076s] [ 20%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/gl.cc.o[0m
+[1.076s] [ 20%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/file_manager.cc.o[0m
+[1.076s] [ 20%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/camera.cc.o[0m
+[1.076s] [ 25%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_fiducial.cc.o[0m
+[1.076s] [ 25%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_lightindicator.cc.o[0m
+[1.076s] [ 25%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model.cc.o[0m
+[1.076s] [ 28%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/option.cc.o[0m
+[1.077s] [ 28%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_draw.cc.o[0m
+[1.077s] [ 32%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/texture_manager.cc.o[0m
+[1.077s] [ 33%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_camera.cc.o[0m
+[1.077s] [ 33%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_gripper.cc.o[0m
+[1.077s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/typetable.cc.o[0m
+[1.077s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/stage.cc.o[0m
+[1.078s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/region.cc.o[0m
+[1.078s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_ranger.cc.o[0m
+[1.078s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/powerpack.cc.o[0m
+[1.078s] [ 44%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldfile.cc.o[0m
+[1.078s] [ 45%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/canvas.cc.o[0m
+[1.078s] [ 47%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/world.cc.o[0m
+[1.078s] [ 50%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/options_dlg.cc.o[0m
+[1.078s] [ 50%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_position.cc.o[0m
+[1.080s] [ 52%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldgui.cc.o[0m
+[1.083s] [ 54%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/vis_strip.cc.o[0m
+[1.937s] [ 55%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/ancestor.cc.o[0m
+[3.091s] [ 57%] [32m[1mLinking CXX shared library libstage.so[0m
+[3.192s] [ 57%] Built target stage
+[3.213s] [ 59%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr.dir/fasr.cc.o[0m
+[3.214s] [ 61%] [32mBuilding CXX object examples/ctrl/CMakeFiles/sink.dir/sink.cc.o[0m
+[3.219s] [ 62%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/fasr2.cc.o[0m
+[3.219s] [ 64%] [32mBuilding CXX object examples/ctrl/CMakeFiles/source.dir/source.cc.o[0m
+[3.220s] [ 66%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/astar/findpath.cpp.o[0m
+[3.221s] [ 67%] [32mBuilding CXX object examples/ctrl/CMakeFiles/rasterize.dir/rasterize.cc.o[0m
+[3.222s] [ 72%] [32mBuilding CXX object examples/ctrl/CMakeFiles/lasernoise.dir/lasernoise.cc.o[0m
+[3.222s] [ 72%] [32mBuilding CXX object libstage/CMakeFiles/stagebinary.dir/main.cc.o[0m
+[3.222s] [ 72%] [32mBuilding CXX object examples/ctrl/CMakeFiles/wander.dir/wander.cc.o[0m
+[3.222s] [ 74%] [32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_pioneer.dir/expand_pioneer.cc.o[0m
+[3.224s] [ 77%] [32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_swarm.dir/expand_swarm.cc.o[0m
+[3.225s] [ 77%] [32mBuilding CXX object examples/ctrl/CMakeFiles/dynamic.dir/dynamic.cc.o[0m
+[3.226s] [ 79%] [32mBuilding CXX object examples/ctrl/CMakeFiles/pioneer_flocking.dir/pioneer_flocking.cc.o[0m
+[3.707s] [ 81%] [32m[1mLinking CXX shared module sink.so[0m
+[3.709s] [ 83%] [32m[1mLinking CXX shared module rasterize.so[0m
+[3.717s] [ 84%] [32m[1mLinking CXX shared module dynamic.so[0m
+[3.761s] [ 86%] [32m[1mLinking CXX shared module fasr.so[0m
+[3.770s] [ 86%] Built target sink
+[3.770s] [ 86%] Built target rasterize
+[3.793s] [ 88%] [32m[1mLinking CXX shared module pioneer_flocking.so[0m
+[3.799s] [ 88%] Built target dynamic
+[3.814s] [ 89%] [32m[1mLinking CXX executable stage[0m
+[3.828s] [ 89%] Built target fasr
+[3.865s] [ 89%] Built target pioneer_flocking
+[3.891s] [ 89%] Built target stagebinary
+[3.896s] [ 91%] [32m[1mLinking CXX shared module lasernoise.so[0m
+[3.934s] [ 93%] [32m[1mLinking CXX shared module expand_pioneer.so[0m
+[3.954s] [ 93%] Built target lasernoise
+[3.962s] [ 94%] [32m[1mLinking CXX shared module wander.so[0m
+[3.976s] [ 96%] [32m[1mLinking CXX shared module expand_swarm.so[0m
+[4.000s] [ 96%] Built target expand_pioneer
+[4.015s] [ 98%] [32m[1mLinking CXX shared module source.so[0m
+[4.023s] [ 98%] Built target wander
+[4.042s] [ 98%] Built target expand_swarm
+[4.076s] [ 98%] Built target source
+[4.120s] [100%] [32m[1mLinking CXX shared module fasr2.so[0m
+[4.184s] [100%] Built target fasr2
+[4.194s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage -- -j32 -l32
+[4.201s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage
+[4.207s] -- Install configuration: "RELEASE"
+[4.207s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/pkgconfig/stage.pc
+[4.207s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/cmake/Stage/stage-config.cmake
+[4.207s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/cmake/Stage/stage-config-version.cmake
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/bin/stage
+[4.208s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/bin/stage" to ""
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/libstage.so.4.3.0
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/libstage.so
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/include/Stage-4.3/stage.hh
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/fasr.so
+[4.208s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/fasr.so" to ""
+[4.208s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/sink.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/sink.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/source.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/source.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/wander.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/wander.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/rasterize.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/rasterize.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/lasernoise.so
+[4.209s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/lasernoise.so" to ""
+[4.209s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/dynamic.so
+[4.210s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/dynamic.so" to ""
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/fasr2.so
+[4.210s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/fasr2.so" to ""
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/blue.png
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/death.png
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/green.png
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/logo.png
+[4.210s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/mains.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/mainspower.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/question_mark.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/red.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/stagelogo.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/stall-old.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/stall.png
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/assets/rgb.txt
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/rgb.txt
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/amcl-sonar.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/autolab.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/camera.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/everything.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/lsp_test.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/mbicp.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/nd.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/roomba.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/simple.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/test.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/uoa_robotics_lab.cfg
+[4.211s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/vfh.cfg
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wavefront-remote.cfg
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wavefront.cfg
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi.cfg
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/SFU.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/autolab.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/camera.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/circuit.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/everything.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/fasr.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/fasr2.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/fasr_plan.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/large.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/lsp_test.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/mbicp.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/pioneer_flocking.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/pioneer_follow.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/pioneer_walle.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/roomba.world
+[4.212s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/sensor_noise_demo.world
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/sensor_noise_module_demo.world
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/simple.world
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/uoa_robotics_lab.world
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi.world
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/beacons.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/chatterbox.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/hokuyo.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/irobot.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/map.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/objects.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/pantilt.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/pioneer.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/sick.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/ubot.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/uoa_robotics_lab_models.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/walle.inc
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/cfggen.sh
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/test.sh
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/worldgen.sh
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/expand_swarm.so
+[4.213s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/expand_swarm.so" to ""
+[4.213s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/expand_pioneer.so
+[4.214s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/lib/Stage-4.3/expand_pioneer.so" to ""
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/889_05.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/SFU_1200x615.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/SRI-AIC-kwing.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/autolab.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/cave.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/cave_compact.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/cave_filled.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/frieburg.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/ghost.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/hospital.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/hospital_section.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/human_outline.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/mbicp.png
+[4.214s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/rink.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/sal2.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/simple_rooms.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/space_invader.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/submarine.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/submarine_small.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/table.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/bitmaps/uoa_robotics_lab.png
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/commando.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/hosp_wifi.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/hosp_wifi_5.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/wifi.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/wifi_itu.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/wifi_logdistance.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/wifi_ray.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/wifi_simple.world
+[4.215s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/install/stage/share/stage/worlds/wifi/map.inc
+[4.217s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage

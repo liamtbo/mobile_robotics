@@ -1,0 +1,11 @@
+[console_scripts]
+comms_manager = multi_agent_search.comms_manager:main
+conscientious_reactive_agent = multi_agent_search.conscientious_reactive_agent:main
+convoy_agent = multi_agent_search.convoy_agent:main
+example_agent = multi_agent_search.example_agent:main
+frontier_meetup_agent = multi_agent_search.frontier_meetup_agent:main
+lifecycle_monitor = multi_agent_search.lifecycle_monitor:main
+metrics_monitor = multi_agent_search.metrics_monitor:main
+stage_monitor = multi_agent_search.stage_monitor:main
+target_detector = multi_agent_search.target_detector:main
+uncoordinated_agent = multi_agent_search.uncoordinated_agent:main

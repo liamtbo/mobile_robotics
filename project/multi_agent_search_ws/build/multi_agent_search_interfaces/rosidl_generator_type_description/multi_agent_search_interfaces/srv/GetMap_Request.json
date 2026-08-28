@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "multi_agent_search_interfaces/srv/GetMap_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "multi_agent_search_interfaces/srv/GetMap_Request",
+      "hash_string": "RIHS01_d0d60287fa16fefbb1b87e6fc01cf9c6b4b96d40f5ab8b02774923da3da28ebd"
+    }
+  ]
+}

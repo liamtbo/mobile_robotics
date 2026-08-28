@@ -1,0 +1,375 @@
+from pathlib import Path
+from shutil import copy2, copytree
+
+import yaml
+from ament_index_python.packages import get_package_share_directory
+from launch.actions import (
+    DeclareLaunchArgument,
+    ExecuteProcess,
+    LogInfo,
+    OpaqueFunction,
+    RegisterEventHandler,
+)
+from launch.event_handlers import OnProcessExit
+from launch.substitutions import (
+    LaunchConfiguration,
+    PathJoinSubstitution,
+)
+from launch_ros.actions import Node
+from launch_ros.substitutions import FindPackageShare
+
+from launch import LaunchDescription
+
+
+def copy_floorplan_to_bitmaps_dir(pkg_share: Path):
+    bitmaps_dir = pkg_share / "world" / "bitmaps"
+    bitmaps_dir.mkdir(parents=True, exist_ok=True)
+
+    floorplan_src = pkg_share / "output" / "floorplan.png"
+    floorplan_dst = bitmaps_dir / "floorplan.png"
+    copy2(floorplan_src, floorplan_dst)
+
+    print(f"Copied floorplan.png to {floorplan_dst}")
+
+
+def copy_world_files_from_source_package(pkg_share: Path, source_package: str | None) -> None:
+    """Copy world directory from source package to floorplan_generator_stage."""
+    if not source_package:
+        raise ValueError(
+            "No source_package specified in robot_config.yaml. "
+            "Please add 'source_package: <package_name>' to your robot configuration."
+        )
+
+    try:
+        source_pkg_share = Path(get_package_share_directory(source_package))
+    except Exception as e:
+        raise RuntimeError(
+            f"Could not find package '{source_package}' provided in robot configuration file. "
+            f"Ensure the package is installed and sourced. Error: {e}"
+        ) from e
+
+    source_world_dir = source_pkg_share / "world"
+    if not source_world_dir.exists():
+        raise RuntimeError(
+            f"No world/ directory found in package '{source_package}'. Expected directory at: {source_world_dir}"
+        )
+
+    dest_world_dir = pkg_share / "world"
+    copytree(source_world_dir, dest_world_dir, dirs_exist_ok=True)
+
+    print(f"Copied world/ directory from {source_package} to {dest_world_dir}")
+
+
+def load_robot_config(pkg_share: Path, robot_config_path_str: str | None) -> tuple[str | None, dict[str, int]]:
+    """
+    Load robot config from YAML, copy world files, and resolve paths.
+
+    Returns:
+        Tuple of (robot_header_path, robot_templates).
+
+    """
+    robot_header_path = None
+    robot_templates: dict[str, int] = {}
+    source_package = None
+
+    if not robot_config_path_str:
+        return robot_header_path, robot_templates
+
+    with open(robot_config_path_str) as f:
+        robot_config = yaml.safe_load(f)
+
+    # Extract source package and copy its world directory
+    source_package = robot_config.get("source_package")
+    copy_world_files_from_source_package(pkg_share, source_package)
+
+    if source_package:
+        header_path_rel = robot_config.get("header_path")
+        if header_path_rel:
+            robot_header_path = str(pkg_share / header_path_rel)
+
+        # Convert template list to dict
+        for template in robot_config.get("templates", []):
+            template_path_rel = template["path"]
+            template_path_abs = str(pkg_share / template_path_rel)
+            robot_templates[template_path_abs] = template["count"]
+
+    return robot_header_path, robot_templates
+
+
+def generate_robot_instances(robot_templates: dict[str, int], spawn_positions: list[dict]) -> str:
+    """Generate robot instances from templates and spawn positions."""
+    total_robots_requested = sum(robot_templates.values())
+    num_spawn_positions = len(spawn_positions)
+
+    if total_robots_requested != num_spawn_positions:
+        raise ValueError(
+            f"Robot count mismatch: {total_robots_requested} robots requested in template "
+            f"dictionary, but {num_spawn_positions} spawn positions available in world_config.yaml. "
+            f"Either adjust the robot template dictionary quantities or change the 'num_robots' "
+            f"parameter in the floorplan generation config TOML."
+        )
+
+    robot_instances = []
+    position_index = 0
+
+    for template_path, count in robot_templates.items():
+        with open(template_path) as f:
+            template_content = f.read()
+
+        if (
+            "{{robot-x}}" not in template_content
+            or "{{robot-y}}" not in template_content
+            or "{{robot-name}}" not in template_content
+        ):
+            raise ValueError(
+                f"Robot template '{template_path}' must contain {{robot-x}}, {{robot-y}}, and {{robot-name}} placeholders."
+            )
+
+        for _ in range(count):
+            spawn = spawn_positions[position_index]
+            x = spawn["x"]
+            y = spawn["y"]
+            instance = template_content.replace("{{robot-x}}", str(x))
+            instance = instance.replace("{{robot-y}}", str(y))
+            instance = instance.replace("{{robot-name}}", f"robot_{position_index}")
+            robot_instances.append(instance)
+            position_index += 1
+
+    return "\n\n".join(robot_instances)
+
+
+def generate_world_file_content(
+    pkg_share: Path,
+    config: dict,
+    robot_header_path: str | None,
+    robot_templates: dict[str, int],
+) -> str:
+    width = config["map"]["width"]
+    height = config["map"]["height"]
+
+    # Add 1 meter buffer on each side of the longest dimension
+    margin_per_side = 1.0
+    longest_dimension = max(width, height)
+    view_dimension = longest_dimension + 2 * margin_per_side
+
+    # Use the smaller window dimension to ensure map fits
+    # Numbers come from example stage world files. If changing, update base.world template.
+    window_size = min(635.0, 666.0)
+    scale = window_size / view_dimension
+
+    header_content = ""
+    if robot_header_path:
+        with open(robot_header_path) as f:
+            header_content = f.read().strip() + "\n\n"
+
+    # Replace placeholders in base.world template
+    template_path = pkg_share / "world" / "base.world"
+    with open(template_path) as f:
+        template_content = f.read()
+    base_content = template_content.replace("{{floorplan-x}}", str(width))
+    base_content = base_content.replace("{{floorplan-y}}", str(height))
+    base_content = base_content.replace("{{viewport-scale}}", f"{scale:.3f}")
+
+    robot_content = ""
+    if robot_templates:
+        spawn_positions = config.get("robots", [])
+        robot_content = "\n\n" + generate_robot_instances(robot_templates, spawn_positions)
+
+    world_content = header_content + base_content + robot_content
+
+    return world_content
+
+
+def process_generated_floorplan(context):
+    """Read world_config.yaml and replace placeholders in base.world template."""
+    pkg_share_str = context.perform_substitution(FindPackageShare("floorplan_generator_stage"))
+    pkg_share = Path(pkg_share_str)
+
+    copy_floorplan_to_bitmaps_dir(pkg_share)
+
+    config_path = pkg_share / "output" / "world_config.yaml"
+    with open(config_path) as f:
+        config = yaml.safe_load(f)
+
+    # Get robot config path and parse it
+    robot_config_path_str = context.perform_substitution(LaunchConfiguration("robot_config_path"))
+    robot_header_path, robot_templates = load_robot_config(pkg_share, robot_config_path_str)
+
+    # Fill in the world file template
+    world_content = generate_world_file_content(pkg_share, config, robot_header_path, robot_templates)
+
+    world_path = pkg_share / "world" / "generated.world"
+    world_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(world_path, "w") as f:
+        f.write(world_content)
+
+    print(f"Generated world file: {world_path}")
+
+    use_sim_time = context.perform_substitution(LaunchConfiguration("use_sim_time")).lower() == "true"
+    one_tf_tree = context.perform_substitution(LaunchConfiguration("one_tf_tree")).lower() == "true"
+
+    actions: list[Node | LogInfo] = []
+
+    nodes: list[Node] = [
+        Node(
+            package="stage_ros2",
+            executable="stage_ros2",
+            name="stage",
+            output="screen",
+            parameters=[
+                {"world_file": str(world_path)},
+                {"use_stamped_velocity": True},
+                {"use_sim_time": use_sim_time},
+                {"one_tf_tree": one_tf_tree},
+            ],
+        )
+    ]
+
+    publish_ground_truth_map = (
+        context.perform_substitution(LaunchConfiguration("publish_ground_truth_map")).lower() == "true"
+    )
+
+    if publish_ground_truth_map:
+        resolution = float(context.perform_substitution(LaunchConfiguration("ground_truth_map_resolution")))
+        floorplan_png = str(pkg_share / "world" / "bitmaps" / "floorplan.png")
+        width = config["map"]["width"]
+        height = config["map"]["height"]
+
+        spawn_positions = config.get("robots", [])
+        if spawn_positions:
+            interior_x = float(spawn_positions[0]["x"])
+            interior_y = float(spawn_positions[0]["y"])
+        else:
+            actions.append(
+                LogInfo(
+                    msg="No robot spawn positions in world_config.yaml; "
+                    "using (0, 0) as interior seed for ground truth map"
+                )
+            )
+            interior_x = 0.0
+            interior_y = 0.0
+
+        nodes.append(
+            Node(
+                package="floorplan_generator_stage",
+                executable="ground_truth_map_publisher",
+                name="ground_truth_map_publisher",
+                output="screen",
+                parameters=[
+                    {"image_path": floorplan_png},
+                    {"resolution": resolution},
+                    {"map_width": float(width)},
+                    {"map_height": float(height)},
+                    {"interior_x": interior_x},
+                    {"interior_y": interior_y},
+                    {"use_sim_time": use_sim_time},
+                ],
+            )
+        )
+
+    publish_initial_poses = (
+        context.perform_substitution(LaunchConfiguration("publish_initial_poses")).lower() == "true"
+    )
+
+    if publish_initial_poses:
+        spawn_positions_yaml = str(pkg_share / "output" / "world_config.yaml")
+        nodes.append(
+            Node(
+                package="floorplan_generator_stage",
+                executable="initial_pose_publisher",
+                name="initial_pose_publisher",
+                output="screen",
+                parameters=[
+                    {"spawn_positions_yaml": spawn_positions_yaml},
+                    {"use_sim_time": use_sim_time},
+                ],
+            )
+        )
+
+    return actions + nodes
+
+
+def generate_launch_description():
+    pkg_share = FindPackageShare("floorplan_generator_stage")
+
+    floorplan_config_path_arg = DeclareLaunchArgument(
+        "floorplan_config_path",
+        description="Path to the floorplan generation configuration file",
+    )
+    floorplan_config_path = LaunchConfiguration("floorplan_config_path")
+
+    robot_config_path_arg = DeclareLaunchArgument(
+        "robot_config_path",
+        default_value="",
+        description="Path to robot configuration YAML file (header_path and templates)",
+    )
+
+    publish_ground_truth_map_arg = DeclareLaunchArgument(
+        "publish_ground_truth_map",
+        default_value="false",
+        description="Publish the generated floorplan as a nav_msgs/OccupancyGrid on /ground_truth_map",
+    )
+
+    ground_truth_map_resolution_arg = DeclareLaunchArgument(
+        "ground_truth_map_resolution",
+        default_value="0.05",
+        description="Resolution (meters per cell) of the ground truth occupancy grid",
+    )
+
+    use_sim_time_arg = DeclareLaunchArgument(
+        "use_sim_time",
+        default_value="true",
+        description="Use simulation time from Stage",
+    )
+
+    publish_initial_poses_arg = DeclareLaunchArgument(
+        "publish_initial_poses",
+        default_value="false",
+        description="Publish each robot's initial pose as a PoseWithCovarianceStamped on /robot_N/initialpose",
+    )
+
+    one_tf_tree_arg = DeclareLaunchArgument(
+        "one_tf_tree",
+        default_value="false",
+        description="Publish all robot TFs to the shared /tf topic instead of per-robot /robot_N/tf",
+    )
+
+    output_path = PathJoinSubstitution([pkg_share, "output", "floorplan.png"])
+
+    generate_floorplan = ExecuteProcess(
+        cmd=[
+            "python3",
+            "-m",
+            "floorplan_generator.main",
+            "--config",
+            floorplan_config_path,
+            "--output",
+            output_path,
+        ],
+        output="screen",
+    )
+
+    # Process the world template after floorplan generation completes
+    process_floorplan = OpaqueFunction(function=process_generated_floorplan)
+
+    # Register event handler to trigger template processing after generator exits
+    process_floorplan_on_exit = RegisterEventHandler(
+        OnProcessExit(
+            target_action=generate_floorplan,
+            on_exit=[process_floorplan],
+        )
+    )
+
+    return LaunchDescription(
+        [
+            floorplan_config_path_arg,
+            robot_config_path_arg,
+            publish_ground_truth_map_arg,
+            ground_truth_map_resolution_arg,
+            publish_initial_poses_arg,
+            use_sim_time_arg,
+            one_tf_tree_arg,
+            generate_floorplan,
+            process_floorplan_on_exit,
+        ]
+    )

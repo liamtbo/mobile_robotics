@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "multi_agent_search_interfaces__py",
+		"source" : "/home/liam-bouffard/Desktop/rob599_mobile_robotics/project/multi_agent_search_ws/build/multi_agent_search_interfaces/multi_agent_search_interfaces__py"
+	}
+}

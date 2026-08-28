@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "multi_agent_search_interfaces/srv/TargetDetected_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "multi_agent_search_interfaces/srv/TargetDetected_Response",
+      "hash_string": "RIHS01_e006be5bf192ef5d2c21881375b3c712bdb458cce6a7265eb8eb335822d6c184"
+    }
+  ]
+}

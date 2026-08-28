@@ -1,0 +1,2 @@
+[console_scripts]
+path_planning = hw5.path_planning:main

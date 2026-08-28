@@ -1,0 +1,14 @@
+map:
+  width: 44.8
+  height: 37.4
+robots:
+- robot_id: 0
+  x: -0.195
+  y: -0.895
+- robot_id: 1
+  x: -1.195
+  y: -1.045
+extra_points:
+- point_id: 0
+  x: -10.85
+  y: 15.15
