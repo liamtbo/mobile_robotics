@@ -1,6 +1,0 @@
-setup.py
-multi_agent_search_interfaces/__init__.py
-multi_agent_search_interfaces.egg-info/PKG-INFO
-multi_agent_search_interfaces.egg-info/SOURCES.txt
-multi_agent_search_interfaces.egg-info/dependency_links.txt
-multi_agent_search_interfaces.egg-info/top_level.txt

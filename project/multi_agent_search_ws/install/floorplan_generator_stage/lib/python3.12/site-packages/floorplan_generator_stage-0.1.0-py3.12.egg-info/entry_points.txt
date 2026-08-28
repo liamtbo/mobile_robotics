@@ -1,3 +1,0 @@
-[console_scripts]
-ground_truth_map_publisher = floorplan_generator_stage.ground_truth_map_publisher:main
-initial_pose_publisher = floorplan_generator_stage.initial_pose_publisher:main

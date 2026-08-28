@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/goal_target" FILES "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target/rosidl_adapter/goal_target/action/GoalTarget.idl" "DESTINATION" "share/goal_target/action")

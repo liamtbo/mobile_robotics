@@ -1,9 +1,0 @@
-{
-  "package_name": "multi_agent_search_interfaces",
-  "non_idl_tuples": [
-    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/project/multi_agent_search_ws/src/multi_agent_search_interfaces:msg/AgentMessage.msg",
-    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/project/multi_agent_search_ws/src/multi_agent_search_interfaces:srv/SetMap.srv",
-    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/project/multi_agent_search_ws/src/multi_agent_search_interfaces:srv/GetMap.srv",
-    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/project/multi_agent_search_ws/src/multi_agent_search_interfaces:srv/TargetDetected.srv"
-  ]
-}

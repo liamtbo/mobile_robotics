@@ -1,6 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/src/Stage/worlds/wifi
-# Build directory: /home/liam-bouffard/Desktop/rob599_mobile_robotics/search-and-rescue/noahs_repo/multi_agent_search_ws/build/stage/worlds/wifi
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
