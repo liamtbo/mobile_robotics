@@ -1,0 +1,6 @@
+
+# Request
+geometry_msgs/PointStamped[] points
+---
+# Response
+bool success

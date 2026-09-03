@@ -1,0 +1,1 @@
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/stage_ros2/ament_cmake_core/stage_ros2Config-version.cmake

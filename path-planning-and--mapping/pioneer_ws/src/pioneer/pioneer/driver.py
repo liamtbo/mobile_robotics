@@ -1,0 +1,362 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from rclpy.executors import ExternalShutdownException
+from rclpy.action import ActionServer, CancelResponse, GoalResponse
+
+# from goal_target.action import GoalTarget
+from rclpy.callback_groups import ReentrantCallbackGroup
+from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist, PointStamped, Point, TwistStamped
+
+from tf2_ros.transform_listener import TransformListener
+from tf2_ros.buffer import Buffer
+from tf2_geometry_msgs import do_transform_point
+
+import numpy
+import copy
+
+# For publishing markers to rviz
+from visualization_msgs.msg import Marker
+
+import numpy as np
+
+from pioneer_interfaces.srv import Getpoints   
+
+"""
+CITATION:
+This projects code is inspired from ROB intro 1's project. 
+That code was developed by Professor Bill Smart.
+"""
+
+class Driver(Node):
+
+    def __init__(self):
+
+        super().__init__('driver')
+
+        self.cmd_pub = self.create_publisher(TwistStamped, '/cmd_vel', 1)
+        # self.timer = self.create_timer(0.5, self.publish_cmd)
+
+        # listens for tf2 transformations and stores them in buffer for up to 10 seconds
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
+        self.close_enough = False
+
+        self.target_marker = None
+        self.target_pub = self.create_publisher(Marker, 'current_target', 1)
+
+        # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
+        # thus, i added this arbitrary first point to be skipped.
+        # self.goal_list = [
+        #     PointStamped(point=Point(x=0.0, y=0.0, z=0.0)),
+        #     PointStamped(point=Point(x=4.0, y=0.0, z=0.0)),
+        #     PointStamped(point=Point(x=6.0, y=6.0, z=0.0)),
+        #     PointStamped(point=Point(x=4.0, y=-2.0, z=0.0)),
+        #     PointStamped(point=Point(x=-6.0, y=-6.0, z=0.0)),
+        #     PointStamped(point=Point(x=0.0, y=-3.0, z=0.0)),
+        #     PointStamped(point=Point(x=-7.0, y=5.0, z=0.0)),
+        # ]
+        self.goal_list = []
+        self.goals_exist = False
+
+
+        self.goal_srv = self.create_service(
+            Getpoints, 
+            'getpoints', 
+            self._getpoints_callback
+        )
+        
+        self.goal_idx = 0
+        self.goal = None
+        # self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
+
+        # goal in robot coordinates
+        self.target = PointStamped()
+        self.target.point.x = 0.0
+        self.target.point.y = 0.0
+        # self.set_target()
+
+        # self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
+
+        self.done = False
+
+        self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
+        self.last_scan_time = self.get_clock().now()
+
+        self.marker_timer = self.create_timer(1.0, self._marker_callback)
+
+
+    def _getpoints_callback(self, request, response):
+        self.get_logger().info(f"Received {len(request.points)} points")
+        for point in request.points:
+            self.goal_list.append(point)
+            self.get_logger().info(f"x: {point.point.x}, y: {point.point.y}, z: {point.point.z}")
+        self.goals_exist = True
+        self.goal = self.goal_list[self.goal_idx]
+        self.set_target()
+        response.success = True
+        return response
+    
+    # taken from Bill Smart, smartw@oregonstate.edu intro to robotics 1 code
+    def _marker_callback(self):
+        # wait till service request receives points
+        if not self.goals_exist:
+            return
+
+        """Publishes the target so it shows up in RViz"""
+        if not self.goal:
+            # No goal, get rid of marker if there is one
+            if self.target_marker:
+                self.target_marker.action = Marker.DELETE
+                self.target_pub.publish(self.target_marker)
+                self.target_marker = None
+                self.get_logger().info(f"Driver: Had an existing target marker; removing")
+            return
+        
+        # If we do not currently have a marker, make one
+        if not self.target_marker:
+            self.target_marker = Marker()
+            self.target_marker.header.frame_id = self.goal.header.frame_id
+            self.target_marker.id = 0
+        
+            self.get_logger().info(f"Driver: Creating Marker")
+
+        # Build a marker for the target point
+        #   - this prints out the green dot in RViz (the current target)
+        self.target_marker.header.stamp = self.get_clock().now().to_msg()
+        self.target_marker.type = Marker.SPHERE
+        self.target_marker.action = Marker.ADD
+        self.target_marker.pose.position = self.goal.point
+        self.target_marker.scale.x = 0.3
+        self.target_marker.scale.y = 0.3
+        self.target_marker.scale.z = 0.3
+        self.target_marker.color.r = 0.0
+        self.target_marker.color.g = 1.0
+        self.target_marker.color.b = 0.0
+        self.target_marker.color.a = 1.0
+
+        # Publish the marker
+        self.target_pub.publish(self.target_marker)
+
+        # Turn off the timer so we don't just keep making and deleting the target Marker
+        #   Will get turned back on when we get an goal request
+        self.marker_timer.cancel()
+
+
+    def scan_callback(self, scan):
+        # wait till service request receives points
+        if not self.goals_exist:
+            return
+
+        # slow it down a bit
+        now = self.get_clock().now()
+        if (now - self.last_scan_time).nanoseconds < 2e8:  # 0.2 sec = 5 Hz
+            return
+        self.last_scan_time = now
+
+        if self.done:
+            self.cmd_pub.publish(TwistStamped())  # stop robot
+            return
+
+        if self.distance_error() < 0.2:
+            # self.get_logger().info(f'distance_error: {self.distance_error()}')
+            self.get_logger().info("Goal Reached")
+            self.get_logger().info(f'Goal {self.goal_idx}/{len(self.goal_list) - 1} -> ({self.goal_list[self.goal_idx].point.x}, {self.goal_list[self.goal_idx].point.y})')
+            if self.goal_idx + 1 <= len(self.goal_list) - 1:
+                self.goal_idx += 1
+                self.marker_timer.reset()
+
+            else:
+                self.get_logger().info('All Goals Completed')
+                self.done = True
+                return
+
+        self.goal = self.goal_list[self.goal_idx]
+
+        # self.get_logger().info('in scan callback')
+        if self.goal:
+            self.set_target()
+            
+            t = self.get_twist(scan)
+        else:
+            t = TwistStamped()
+            self.get_logger().info(f'No goal to move towards')
+        
+        self.cmd_pub.publish(t)
+
+    def set_target(self):
+        if self.goal:
+            try:
+                # query the listener for a specific transformation
+                # arguments: target frame, source frame, the time at which we want to transfofrm
+                # transform = self.tf_buffer.lookup_transform('robot/base_link', 'robot/odom', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=4.0))
+                transform = self.tf_buffer.lookup_transform(
+                    'robot/odom',
+                    'robot/base_link',
+                    rclpy.time.Time(),
+                    timeout=rclpy.duration.Duration(seconds=1.0)
+                )
+                
+            except Exception as e:
+                self.get_logger().warn(f'TF target lookup timed-out: {e}')
+                return
+
+			# This does the transform manually, by calculating the theta rotation from the quaternion
+            euler_ang = -np.arctan2(2 * transform.transform.rotation.z * transform.transform.rotation.w,
+                                1.0 - 2 * transform.transform.rotation.z * transform.transform.rotation.z)
+
+            # Translate to the base link's origin
+            x = self.goal.point.x - transform.transform.translation.x
+            y = self.goal.point.y - transform.transform.translation.y
+
+            # Do the rotation
+            rot_x = x * np.cos(euler_ang) - y * np.sin(euler_ang)
+            rot_y = x * np.sin(euler_ang) + y * np.cos(euler_ang)
+
+            self.target.point.x = rot_x
+            self.target.point.y = rot_y
+
+        else:
+            self.target = None		
+
+
+    def get_twist(self, scan):
+
+        t = TwistStamped()
+        
+        # Set timestamp
+        # t.header.stamp = self.get_clock().now().to_msg()
+        # t.header.frame_id = "base_link" 
+        
+        target_x = self.target.point.x
+        target_y = self.target.point.y
+        target_angle = np.arctan2(target_y, target_x)
+        
+        vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=0.5)
+        
+        t.twist.angular.z = vfh_angle
+        t.twist.linear.x = self.distance_error() * 0.3
+        
+        return t
+        
+
+    def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):
+
+        # create polar histogram and associated angles parallel array
+        scan_dist = np.array(scan.ranges) # len(scan_values) = 180
+        scan_angle = np.linspace(scan.angle_min, scan.angle_max, len(scan.ranges))
+
+        dist_bins = []
+        angle_bins = []
+        bin_size = 10
+        
+        # discretize the angles and distance
+        for i in range(0, len(scan_dist), bin_size - 1):
+            start = i
+            end = min(i + (bin_size - 1) + 1, len(scan_dist)) # -1 bc that how bins overlap and +1 bc we want the end integer when slicing
+            dist_bin = scan_dist[start:end].min()
+            dist_bins.append(float(dist_bin))
+            angle_bins.append(scan_angle[start:end])
+
+        # testing TODO remove
+        # for i in range(len(dist_bins)):
+        #     self.get_logger().info(f'i: {i}')
+        #     self.get_logger().info(f'\tdist_bins: {dist_bins[i]}')
+        #     self.get_logger().info(f'\tangle_bins: {angle_bins[i]}')
+
+        # find bins that don't have an object near
+        # self.get_logger().info(f'Num of bins: {len(dist_bins)}')
+        free_bins = []
+        free_angles = []
+        for i, dist in enumerate(dist_bins):
+            if dist >= threshold:
+                free_bins.append(dist)
+                free_angles.append(angle_bins[i])
+        # self.get_logger().info(f'free_bins: {free_bins}')
+        # self.get_logger().info(f'Num of free bins: {len(free_bins)}')
+
+        # combine adjacent angle bins
+        if len(free_angles) == 0:
+            return target_angle
+
+        grouped_angles = [] 
+        local_group = copy.copy(free_angles[0])
+        for i in range(1, len(free_angles)):
+            # print(f'free_angle: {free_angles[i]}')
+            if free_angles[i][0] == free_angles[i - 1][-1]:
+                # print('if path\n')
+                if len(free_angles) > 1:
+                    local_group = np.concatenate((local_group, free_angles[i][1:])) # don't add a duplicate angle
+                if i == len(free_angles) - 1:
+                    grouped_angles.append(local_group)
+            else:
+                # print(f'else path\n')
+                grouped_angles.append(local_group)
+                local_group = copy.copy(free_angles[i])
+                if i == len(free_angles) - 1:
+                    grouped_angles.append(local_group)
+
+        # for i in range(len(grouped_angles)):
+        #     self.get_logger().info(f'Grouped Angle {i}: {grouped_angles[i]}')
+
+        # out of the free bins, which is closest to target angle
+        closest_angle = None
+        target_angle_bin = np.array([])
+        for angle_bin in grouped_angles:
+            if target_angle > angle_bin[-1]:
+                continue
+            target_angle_bin = angle_bin
+            min_error = float('inf')
+            for i, candidate in enumerate(angle_bin):
+                err = abs(target_angle - candidate)
+                if err < min_error:
+                    min_error = err
+                    closest_angle = candidate
+                    target_angle_bin = angle_bin
+            break
+
+        if not target_angle_bin.any():
+            return target_angle
+
+        padding = 20 # padding off the extremes of target_angle_bin
+        padded_angle = target_angle
+        padded_angle_i = None
+        if closest_angle == target_angle_bin[0]:
+            padded_angle_i = min(0 + padding, len(target_angle_bin) - 1)
+            padded_angle = target_angle_bin[padded_angle_i]
+        elif closest_angle == target_angle_bin[-1]:
+            padded_angle_i = max(len(target_angle_bin) - 1 - padding, 0)
+            padded_angle = target_angle_bin[padded_angle_i]
+        # self.get_logger().info(f'padding_idx: {padded_angle_i}')
+        
+        return padded_angle
+    
+
+    def distance_error(self):
+        target_x = self.target.point.x
+        target_y = self.target.point.y
+        return np.sqrt(target_x**2 + target_y**2)
+
+
+    def publish_cmd(self):
+        t = Twist()
+        t.linear.x = 0.3
+        t.linear.y = 0.0
+        t.angular.z = 0.0
+        self.cmd_pub.publish(t)
+        self.get_logger().info('Publishing cmd_vel')
+        
+
+def main(args=None):
+    try:
+        with rclpy.init(args=args):
+            driver = Driver()
+            rclpy.spin(driver)
+    except (KeyboardInterrupt, ExternalShutdownException):
+        pass
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,7 @@
+{
+  "package_name": "pioneer_interfaces",
+  "non_idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/pioneer_interfaces:srv/Savemap.srv",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/pioneer_interfaces:srv/Getpoints.srv"
+  ]
+}

@@ -1,0 +1,7 @@
+[console_scripts]
+driver = pioneer.driver:main
+localization = pioneer.localization:main
+mapping = pioneer.mapping:main
+path_planning = pioneer.path_planning:main
+savemap = pioneer.savemap:main
+world_tf = pioneer.world_tf:main

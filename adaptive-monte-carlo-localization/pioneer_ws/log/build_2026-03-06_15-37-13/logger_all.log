@@ -1,0 +1,189 @@
+[0.154s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'pioneer']
+[0.154s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['pioneer'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7325e4cf4ce0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7325e4cf4ad0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7325e4cf4ad0>>, mixin_verb=('build',))
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.200s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/Stage) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Stage' with type 'ros.catkin' and name 'stage'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/goal_target) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/goal_target' with type 'ros.ament_cmake' and name 'goal_target'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pioneer' with type 'ros.ament_python' and name 'pioneer'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_interfaces) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pioneer_interfaces' with type 'ros.ament_cmake' and name 'pioneer_interfaces'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/stage_ros2) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stage_ros2' with type 'ros.ament_cmake' and name 'stage_ros2'
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.266s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'goal_target' in 'src/goal_target'
+[0.266s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pioneer_interfaces' in 'src/pioneer_interfaces'
+[0.266s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'stage' in 'src/Stage'
+[0.266s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'stage_ros2' in 'src/stage_ros2'
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.267s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.267s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.267s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/goal_target' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.268s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.268s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/goal_target' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install
+[0.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install
+[0.271s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 408 installed packages in /opt/ros/kilted
+[0.273s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'pioneer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'pioneer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer', 'merge_install': False, 'path': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/pioneer', 'symlink_install': True, 'test_result_base': None}
+[0.339s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.341s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/pioneer' with build type 'ament_python'
+[0.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer', 'ament_prefix_path')
+[0.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/ament_prefix_path.ps1'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/ament_prefix_path.dsv'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/ament_prefix_path.sh'
+[0.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.349s] WARNING:colcon.colcon_core.shell:The following packages are in the workspace but haven't been built:
+- goal_target
+- pioneer_interfaces
+They are being used from the following locations instead:
+- /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target
+- /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces
+To suppress this warning ignore these packages in the workspace:
+--packages-ignore goal_target pioneer_interfaces
+[0.671s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/pioneer'
+[0.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/build --no-deps symlink_data
+[2.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer', 'pythonpath_develop')
+[2.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/share/pioneer/hook/pythonpath_develop.ps1'
+[2.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/build --no-deps symlink_data
+[2.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/share/pioneer/hook/pythonpath_develop.dsv'
+[2.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/share/pioneer/hook/pythonpath_develop.sh'
+[2.589s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer' for CMake module files
+[2.589s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer' for CMake config files
+[2.590s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib'
+[2.590s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/bin'
+[2.590s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pkgconfig/pioneer.pc'
+[2.591s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages'
+[2.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer', 'pythonpath')
+[2.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/pythonpath.ps1'
+[2.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/pythonpath.dsv'
+[2.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/hook/pythonpath.sh'
+[2.593s] Level 1:colcon.colcon_core.environment:checking '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/bin'
+[2.593s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pioneer)
+[2.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/package.ps1'
+[2.594s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/package.dsv'
+[2.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/package.sh'
+[2.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/package.bash'
+[2.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/package.zsh'
+[2.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/colcon-core/packages/pioneer)
+[2.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.597s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.604s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.604s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.604s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.635s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/local_setup.ps1'
+[2.636s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/_local_setup_util_ps1.py'
+[2.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/setup.ps1'
+[2.638s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/local_setup.sh'
+[2.639s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/_local_setup_util_sh.py'
+[2.639s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/setup.sh'
+[2.640s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/local_setup.bash'
+[2.641s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/setup.bash'
+[2.642s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/local_setup.zsh'
+[2.642s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/setup.zsh'

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "pioneer_interfaces/srv/Savemap_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "pioneer_interfaces/srv/Savemap_Request",
+      "hash_string": "RIHS01_e4d9a8e63e47795af2702974610a4f45d4eb34c1d251632304f373db4a285c3e"
+    }
+  ]
+}

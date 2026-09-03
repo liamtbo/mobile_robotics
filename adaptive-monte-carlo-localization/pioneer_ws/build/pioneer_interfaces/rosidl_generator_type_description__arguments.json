@@ -1,0 +1,15 @@
+{
+  "package_name": "pioneer_interfaces",
+  "output_dir": "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer_interfaces/rosidl_generator_type_description/pioneer_interfaces",
+  "idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer_interfaces/rosidl_adapter/pioneer_interfaces:srv/Savemap.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer_interfaces/rosidl_adapter/pioneer_interfaces:srv/Getpoints.idl"
+  ],
+  "include_paths": [
+    "nav_msgs:/opt/ros/kilted/share/nav_msgs",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs"
+  ]
+}

@@ -1,0 +1,254 @@
+[0.014s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage
+[0.119s] -- The C compiler identification is GNU 13.3.0
+[0.234s] -- The CXX compiler identification is GNU 13.3.0
+[0.262s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.464s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.464s] -- Detecting C compile features
+[0.465s] -- Detecting C compile features - done
+[0.481s] -- Detecting CXX compiler ABI info
+[0.683s] -- Detecting CXX compiler ABI info - done
+[0.707s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.708s] -- Detecting CXX compile features
+[0.709s] -- Detecting CXX compile features - done
+[0.711s] -- Stage version 4.3.0
+[0.711s] -- Operating system is Linux
+[0.711s] -- Installing Libraries to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib
+[0.712s] -- Installing Plugins to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3
+[0.712s] -- Build type RELEASE
+[0.712s] -- Checking for libtool
+[0.740s] -- Checking for required libraries...
+[0.805s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[0.835s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[0.880s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") 
+[0.896s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.194s] -- Found X11: /usr/include   
+[1.195s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.376s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.376s] -- Looking for gethostbyname
+[1.505s] -- Looking for gethostbyname - found
+[1.505s] -- Looking for connect
+[1.699s] -- Looking for connect - found
+[1.699s] -- Looking for remove
+[1.860s] -- Looking for remove - found
+[1.861s] -- Looking for shmat
+[2.026s] -- Looking for shmat - found
+[2.026s] -- Looking for IceConnectionNumber in ICE
+[2.160s] -- Looking for IceConnectionNumber in ICE - found
+[2.246s] -- Found FLTK: fltk_images;fltk_forms;fltk_gl;fltk  
+[2.254s] -- Checking for optional libraries...
+[2.255s] -- Installation path CMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage
+[2.257s] -- Configuring libstage
+[2.275s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[2.276s] -- Checking for one of the modules 'playercore>=2.1.0'
+[2.376s] --   * Player not detected. If Player is installed but not detected, check your PKG_CONFIG_PATH.
+[2.402s] -- Configuring done (2.4s)
+[2.455s] -- Generating done (0.0s)
+[2.457s] [33mCMake Warning:
+[2.457s]   Manually-specified variables were not used by the project:
+[2.457s] 
+[2.457s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.458s] 
+[2.458s] [0m
+[2.465s] -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage
+[2.477s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage
+[2.479s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage -- -j32 -l32
+[2.570s] [  1%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/block.cc.o[0m
+[2.570s] [  5%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/color.cc.o[0m
+[2.571s] [  6%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/blockgroup.cc.o[0m
+[2.571s] [  6%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/camera.cc.o[0m
+[2.572s] [ 10%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/file_manager.cc.o[0m
+[2.572s] [ 10%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_actuator.cc.o[0m
+[2.573s] [ 13%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/gl.cc.o[0m
+[2.573s] [ 13%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blinkenlight.cc.o[0m
+[2.573s] [ 15%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/logentry.cc.o[0m
+[2.573s] [ 16%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model.cc.o[0m
+[2.574s] [ 18%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blobfinder.cc.o[0m
+[2.574s] [ 20%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_camera.cc.o[0m
+[2.575s] [ 22%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_bumper.cc.o[0m
+[2.577s] [ 25%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_draw.cc.o[0m
+[2.577s] [ 25%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_callbacks.cc.o[0m
+[2.579s] [ 27%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_lightindicator.cc.o[0m
+[2.579s] [ 28%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_position.cc.o[0m
+[2.580s] [ 30%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_fiducial.cc.o[0m
+[2.581s] [ 32%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_ranger.cc.o[0m
+[2.582s] [ 35%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_gripper.cc.o[0m
+[2.582s] [ 35%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/option.cc.o[0m
+[2.585s] [ 38%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/region.cc.o[0m
+[2.585s] [ 38%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/powerpack.cc.o[0m
+[2.585s] [ 40%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/stage.cc.o[0m
+[2.586s] [ 42%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/world.cc.o[0m
+[2.586s] [ 44%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/texture_manager.cc.o[0m
+[2.586s] [ 45%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/typetable.cc.o[0m
+[2.593s] [ 49%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/canvas.cc.o[0m
+[2.593s] [ 49%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/vis_strip.cc.o[0m
+[2.594s] [ 50%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldfile.cc.o[0m
+[2.594s] [ 52%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/options_dlg.cc.o[0m
+[2.595s] [ 54%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldgui.cc.o[0m
+[4.102s] [ 55%] [32mBuilding CXX object libstage/CMakeFiles/stage.dir/ancestor.cc.o[0m
+[6.300s] [ 57%] [32m[1mLinking CXX shared library libstage.so[0m
+[6.529s] [ 57%] Built target stage
+[6.576s] [ 59%] [32mBuilding CXX object examples/ctrl/CMakeFiles/wander.dir/wander.cc.o[0m
+[6.577s] [ 62%] [32mBuilding CXX object examples/ctrl/CMakeFiles/source.dir/source.cc.o[0m
+[6.577s] [ 62%] [32mBuilding CXX object examples/ctrl/CMakeFiles/pioneer_flocking.dir/pioneer_flocking.cc.o[0m
+[6.577s] [ 64%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr.dir/fasr.cc.o[0m
+[6.583s] [ 66%] [32mBuilding CXX object libstage/CMakeFiles/stagebinary.dir/main.cc.o[0m
+[6.583s] [ 67%] [32mBuilding CXX object examples/ctrl/CMakeFiles/lasernoise.dir/lasernoise.cc.o[0m
+[6.584s] [ 71%] [32mBuilding CXX object examples/ctrl/CMakeFiles/dynamic.dir/dynamic.cc.o[0m
+[6.584s] [ 71%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/fasr2.cc.o[0m
+[6.584s] [ 72%] [32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/astar/findpath.cpp.o[0m
+[6.588s] [ 76%] [32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_swarm.dir/expand_swarm.cc.o[0m
+[6.588s] [ 76%] [32mBuilding CXX object examples/ctrl/CMakeFiles/sink.dir/sink.cc.o[0m
+[6.589s] [ 77%] [32mBuilding CXX object examples/ctrl/CMakeFiles/rasterize.dir/rasterize.cc.o[0m
+[6.590s] [ 79%] [32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_pioneer.dir/expand_pioneer.cc.o[0m
+[7.459s] [ 81%] [32m[1mLinking CXX shared module lasernoise.so[0m
+[7.505s] [ 83%] [32m[1mLinking CXX shared module rasterize.so[0m
+[7.512s] [ 84%] [32m[1mLinking CXX shared module wander.so[0m
+[7.535s] [ 86%] [32m[1mLinking CXX shared module expand_swarm.so[0m
+[7.562s] [ 86%] Built target lasernoise
+[7.600s] [ 88%] [32m[1mLinking CXX executable stage[0m
+[7.609s] [ 88%] Built target rasterize
+[7.645s] [ 88%] Built target wander
+[7.647s] [ 89%] [32m[1mLinking CXX shared module source.so[0m
+[7.655s] [ 89%] Built target expand_swarm
+[7.729s] [ 89%] Built target stagebinary
+[7.756s] [ 89%] Built target source
+[7.822s] [ 91%] [32m[1mLinking CXX shared module sink.so[0m
+[7.874s] [ 93%] [32m[1mLinking CXX shared module fasr.so[0m
+[7.888s] [ 94%] [32m[1mLinking CXX shared module expand_pioneer.so[0m
+[7.927s] [ 94%] Built target sink
+[7.992s] [ 96%] [32m[1mLinking CXX shared module dynamic.so[0m
+[7.992s] [ 96%] Built target fasr
+[7.994s] [ 98%] [32m[1mLinking CXX shared module pioneer_flocking.so[0m
+[8.005s] [ 98%] Built target expand_pioneer
+[8.093s] [ 98%] Built target dynamic
+[8.104s] [ 98%] Built target pioneer_flocking
+[8.618s] [100%] [32m[1mLinking CXX shared module fasr2.so[0m
+[8.769s] [100%] Built target fasr2
+[8.804s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage -- -j32 -l32
+[8.836s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage
+[8.850s] -- Install configuration: "RELEASE"
+[8.851s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/pkgconfig/stage.pc
+[8.851s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/cmake/Stage/stage-config.cmake
+[8.851s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/cmake/Stage/stage-config-version.cmake
+[8.851s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/bin/stage
+[8.851s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/bin/stage" to ""
+[8.851s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/libstage.so.4.3.0
+[8.852s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/libstage.so
+[8.852s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/include/Stage-4.3/stage.hh
+[8.855s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/fasr.so
+[8.855s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/fasr.so" to ""
+[8.856s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/sink.so
+[8.857s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/sink.so" to ""
+[8.857s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/source.so
+[8.858s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/source.so" to ""
+[8.858s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/wander.so
+[8.859s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/wander.so" to ""
+[8.859s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so
+[8.860s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so" to ""
+[8.860s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/rasterize.so
+[8.860s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/rasterize.so" to ""
+[8.861s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/lasernoise.so
+[8.862s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/lasernoise.so" to ""
+[8.862s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/dynamic.so
+[8.862s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/dynamic.so" to ""
+[8.863s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/fasr2.so
+[8.863s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/fasr2.so" to ""
+[8.865s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/blue.png
+[8.865s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/death.png
+[8.865s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/green.png
+[8.866s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/logo.png
+[8.866s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/mains.png
+[8.867s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/mainspower.png
+[8.867s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/question_mark.png
+[8.868s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/red.png
+[8.868s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/stagelogo.png
+[8.868s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/stall-old.png
+[8.868s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/stall.png
+[8.869s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/assets/rgb.txt
+[8.869s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/rgb.txt
+[8.870s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/amcl-sonar.cfg
+[8.870s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/autolab.cfg
+[8.871s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/camera.cfg
+[8.871s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/everything.cfg
+[8.871s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/lsp_test.cfg
+[8.871s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/mbicp.cfg
+[8.871s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/nd.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/roomba.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/simple.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/test.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/uoa_robotics_lab.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/vfh.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wavefront-remote.cfg
+[8.872s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wavefront.cfg
+[8.873s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi.cfg
+[8.873s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/SFU.world
+[8.873s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/autolab.world
+[8.873s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/camera.world
+[8.873s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/circuit.world
+[8.874s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/everything.world
+[8.874s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/fasr.world
+[8.874s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/fasr2.world
+[8.874s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/fasr_plan.world
+[8.874s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/large.world
+[8.875s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/lsp_test.world
+[8.875s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/mbicp.world
+[8.875s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/pioneer_flocking.world
+[8.875s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/pioneer_follow.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/pioneer_walle.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/roomba.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/sensor_noise_demo.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/sensor_noise_module_demo.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/simple.world
+[8.876s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/uoa_robotics_lab.world
+[8.877s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi.world
+[8.877s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/beacons.inc
+[8.877s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/chatterbox.inc
+[8.877s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/hokuyo.inc
+[8.877s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/irobot.inc
+[8.878s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/map.inc
+[8.878s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/objects.inc
+[8.878s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/pantilt.inc
+[8.878s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/pioneer.inc
+[8.878s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/sick.inc
+[8.879s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/ubot.inc
+[8.879s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/uoa_robotics_lab_models.inc
+[8.879s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/walle.inc
+[8.879s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/cfggen.sh
+[8.879s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/test.sh
+[8.880s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/worldgen.sh
+[8.880s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/expand_swarm.so
+[8.880s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/expand_swarm.so" to ""
+[8.880s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/expand_pioneer.so
+[8.880s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/lib/Stage-4.3/expand_pioneer.so" to ""
+[8.880s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/889_05.png
+[8.880s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/SFU_1200x615.png
+[8.881s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/SRI-AIC-kwing.png
+[8.881s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/autolab.png
+[8.882s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/cave.png
+[8.882s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/cave_compact.png
+[8.882s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/cave_filled.png
+[8.882s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/frieburg.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/ghost.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/hospital.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/hospital_section.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/human_outline.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/mbicp.png
+[8.883s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/rink.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/sal2.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/simple_rooms.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/space_invader.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/submarine.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/submarine_small.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/table.png
+[8.884s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/bitmaps/uoa_robotics_lab.png
+[8.885s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/commando.world
+[8.885s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/hosp_wifi.world
+[8.885s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/hosp_wifi_5.world
+[8.885s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/wifi.world
+[8.885s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/wifi_itu.world
+[8.886s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/wifi_logdistance.world
+[8.886s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/wifi_ray.world
+[8.886s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/wifi_simple.world
+[8.886s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/stage/share/stage/worlds/wifi/map.inc
+[8.888s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/stage

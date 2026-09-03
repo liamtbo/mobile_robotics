@@ -1,0 +1,201 @@
+[0.013s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/src/goal_target -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target
+[0.066s] -- The C compiler identification is GNU 13.3.0
+[0.112s] -- The CXX compiler identification is GNU 13.3.0
+[0.127s] -- Detecting C compiler ABI info
+[0.204s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.211s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.220s] -- Detecting CXX compiler ABI info
+[0.302s] -- Detecting CXX compiler ABI info - done
+[0.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.313s] -- Detecting CXX compile features
+[0.314s] -- Detecting CXX compile features - done
+[0.317s] -- Found ament_cmake: 2.7.4 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.443s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.495s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.528s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[0.534s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.574s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.612s] -- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[0.616s] -- Found std_msgs: 5.5.1 (/opt/ros/kilted/share/std_msgs/cmake)
+[0.644s] -- Found geometry_msgs: 5.5.1 (/opt/ros/kilted/share/geometry_msgs/cmake)
+[1.301s] -- Found ament_cmake_ros_core: 0.14.7 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[2.124s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.726s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.060s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.117s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[3.152s] -- Added test 'lint_cmake' to check CMake code style
+[3.153s] -- Added test 'xmllint' to check XML markup files
+[3.158s] -- Configuring done (3.1s)
+[3.202s] -- Generating done (0.0s)
+[3.215s] -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target
+[3.227s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/src/goal_target -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target
+[3.228s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target -- -j32 -l32
+[3.275s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.286s] [  2%] Built target ament_cmake_python_symlink_goal_target
+[3.467s] [  2%] Built target goal_target__rosidl_generator_type_description
+[3.478s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.482s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.584s] running egg_info
+[3.585s] creating goal_target.egg-info
+[3.618s] writing goal_target.egg-info/PKG-INFO
+[3.618s] writing dependency_links to goal_target.egg-info/dependency_links.txt
+[3.618s] writing top-level names to goal_target.egg-info/top_level.txt
+[3.618s] writing manifest file 'goal_target.egg-info/SOURCES.txt'
+[3.693s] reading manifest file 'goal_target.egg-info/SOURCES.txt'
+[3.694s] writing manifest file 'goal_target.egg-info/SOURCES.txt'
+[3.713s] [  8%] Built target ament_cmake_python_build_goal_target_egg
+[3.757s] [  8%] Built target goal_target__cpp
+[3.962s] [ 17%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__functions.c.o[0m
+[3.963s] [ 17%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__description.c.o[0m
+[3.963s] [ 17%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__type_support.c.o[0m
+[4.088s] [ 20%] [32m[1mLinking C shared library libgoal_target__rosidl_generator_c.so[0m
+[4.120s] [ 20%] Built target goal_target__rosidl_generator_c
+[4.128s] [ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.128s] [ 26%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.130s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.130s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.130s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.131s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.368s] [ 41%] [32mBuilding C object CMakeFiles/goal_target__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/goal_target/action/detail/goal_target__type_support.c.o[0m
+[4.377s] [ 44%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_c.dir/rosidl_typesupport_c/goal_target/action/goal_target__type_support.cpp.o[0m
+[4.415s] [ 50%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goal_target/action/goal_target__type_support.cpp.o[0m
+[4.415s] [ 50%] [32m[1mLinking C shared library libgoal_target__rosidl_typesupport_introspection_c.so[0m
+[4.416s] [ 52%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_c.so[0m
+[4.448s] [ 55%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/goal_target/action/detail/dds_fastrtps/goal_target__type_support.cpp.o[0m
+[4.448s] [ 55%] Built target goal_target__rosidl_typesupport_introspection_c
+[4.450s] [ 55%] Built target goal_target__rosidl_typesupport_c
+[4.460s] [ 58%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goal_target/action/detail/goal_target__type_support.cpp.o[0m
+[4.596s] [ 61%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/goal_target/action/detail/goal_target__type_support_c.cpp.o[0m
+[4.815s] [ 64%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_cpp.so[0m
+[4.873s] [ 64%] Built target goal_target__rosidl_typesupport_cpp
+[4.905s] [ 67%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_introspection_cpp.so[0m
+[4.948s] [ 70%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_c.so[0m
+[4.965s] [ 70%] Built target goal_target__rosidl_typesupport_introspection_cpp
+[4.991s] [ 70%] Built target goal_target__rosidl_typesupport_fastrtps_c
+[5.045s] [ 73%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.106s] [ 73%] Built target goal_target__rosidl_typesupport_fastrtps_cpp
+[5.128s] [ 73%] Built target goal_target
+[5.148s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.566s] [ 76%] Built target goal_target__py
+[5.586s] [ 79%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_py.dir/rosidl_generator_py/goal_target/action/_goal_target_s.c.o[0m
+[5.725s] [ 82%] [32m[1mLinking C shared library libgoal_target__rosidl_generator_py.so[0m
+[5.767s] [ 82%] Built target goal_target__rosidl_generator_py
+[5.785s] [ 85%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.787s] [ 88%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_c.c.o[0m
+[5.788s] [ 91%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.874s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so[0m
+[5.878s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.896s] [100%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_c.so[0m
+[5.905s] [100%] Built target goal_target_s__rosidl_typesupport_introspection_c
+[5.913s] [100%] Built target goal_target_s__rosidl_typesupport_fastrtps_c
+[5.927s] [100%] Built target goal_target_s__rosidl_typesupport_c
+[5.938s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target -- -j32 -l32
+[5.940s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target
+[5.948s] -- Install configuration: ""
+[5.949s] -- Execute custom install script
+[5.949s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/ament_index/resource_index/rosidl_interfaces/goal_target
+[5.958s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.json
+[5.967s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__functions.h
+[5.976s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__struct.h
+[5.984s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__type_support.h
+[5.992s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/goal_target.h
+[6.001s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_generator_c__visibility_control.h
+[6.009s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/library_path.sh
+[6.018s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/library_path.dsv
+[6.027s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_fastrtps_c.h
+[6.034s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.043s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_introspection_c.h
+[6.049s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.058s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__builder.hpp
+[6.065s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__struct.hpp
+[6.075s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__traits.hpp
+[6.082s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__type_support.hpp
+[6.089s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/goal_target.hpp
+[6.098s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.104s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_fastrtps_cpp.hpp
+[6.113s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.120s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_introspection_cpp.hpp
+[6.129s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/pythonpath.sh
+[6.139s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/pythonpath.dsv
+[6.146s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/PKG-INFO
+[6.154s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.161s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.171s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/top_level.txt
+[6.180s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/__init__.py
+[6.187s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_c.c
+[6.194s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.203s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c
+[6.211s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/__init__.py
+[6.218s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target.py
+[6.226s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target_s.c
+[6.236s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_c.so
+[6.243s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so
+[6.250s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so
+[6.258s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so
+[6.258s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so
+[6.258s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_c.so
+[6.259s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.idl
+[6.268s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.action
+[6.278s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/ament_index/resource_index/package_run_dependencies/goal_target
+[6.288s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/ament_index/resource_index/parent_prefix_path/goal_target
+[6.297s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/ament_prefix_path.sh
+[6.306s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/ament_prefix_path.dsv
+[6.312s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/path.sh
+[6.321s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/environment/path.dsv
+[6.331s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/local_setup.bash
+[6.339s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/local_setup.sh
+[6.348s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/local_setup.zsh
+[6.355s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/local_setup.dsv
+[6.364s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/package.dsv
+[6.371s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/ament_index/resource_index/packages/goal_target
+[6.378s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake-extras.cmake
+[6.387s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.396s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.404s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_libraries-extras.cmake
+[6.411s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_targets-extras.cmake
+[6.420s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.430s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.437s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_targetConfig.cmake
+[6.447s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_targetConfig-version.cmake
+[6.456s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/package.xml
+[6.465s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_c.so
+[6.465s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_c.so" to ""
+[6.466s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_c.so
+[6.466s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_c.so" to ""
+[6.466s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_c.so
+[6.466s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_c.so" to ""
+[6.466s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_c.so
+[6.466s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_c.so" to ""
+[6.466s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_cpp.so
+[6.466s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.466s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_cpp.so
+[6.467s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_cpp.so" to ""
+[6.467s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_cpp.so
+[6.467s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_cpp.so" to ""
+[6.502s] Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target'...
+[6.502s] Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/__init__.py'...
+[6.502s] Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action'...
+[6.502s] Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/__init__.py'...
+[6.502s] Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target.py'...
+[6.506s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_py.so
+[6.506s] -- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_py.so" to ""
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cExport.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cExport-noconfig.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cExport.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cExport.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cExport.cmake
+[6.507s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cExport-noconfig.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cppExport.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cppExport.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cppExport.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cppExport-noconfig.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_pyExport.cmake
+[6.508s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_pyExport-noconfig.cmake
+[6.509s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/goal_target

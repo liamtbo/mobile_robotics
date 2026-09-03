@@ -1,0 +1,22 @@
+[0.645s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/build --no-deps symlink_data
+[0.887s] running develop
+[1.042s] running egg_info
+[1.042s] creating start_robot.egg-info
+[1.057s] writing start_robot.egg-info/PKG-INFO
+[1.057s] writing dependency_links to start_robot.egg-info/dependency_links.txt
+[1.057s] writing requirements to start_robot.egg-info/requires.txt
+[1.057s] writing top-level names to start_robot.egg-info/top_level.txt
+[1.057s] writing manifest file 'start_robot.egg-info/SOURCES.txt'
+[1.089s] reading manifest file 'start_robot.egg-info/SOURCES.txt'
+[1.089s] writing manifest file 'start_robot.egg-info/SOURCES.txt'
+[1.117s] running build_ext
+[1.117s] Creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/lib/python3.12/site-packages/start-robot.egg-link (link to .)
+[1.120s] 
+[1.120s] Installed /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot
+[1.120s] running symlink_data
+[1.121s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index
+[1.121s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index
+[1.121s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index/packages
+[1.121s] symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/resource/start_robot -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index/packages
+[1.121s] symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/start_robot
+[1.167s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/build --no-deps symlink_data

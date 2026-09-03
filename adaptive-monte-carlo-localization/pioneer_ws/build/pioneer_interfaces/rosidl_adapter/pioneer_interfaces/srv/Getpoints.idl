@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pioneer_interfaces/srv/Getpoints.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PointStamped.idl"
+
+module pioneer_interfaces {
+  module srv {
+    struct Getpoints_Request {
+      @verbatim (language="comment", text=
+        "Request")
+      sequence<geometry_msgs::msg::PointStamped> points;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct Getpoints_Response {
+      boolean success;
+    };
+  };
+};

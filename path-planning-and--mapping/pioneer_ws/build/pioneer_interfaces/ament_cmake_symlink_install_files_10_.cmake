@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/src/pioneer_interfaces" FILES "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/src/pioneer_interfaces/srv/Getpoints.srv" "DESTINATION" "share/pioneer_interfaces/srv")

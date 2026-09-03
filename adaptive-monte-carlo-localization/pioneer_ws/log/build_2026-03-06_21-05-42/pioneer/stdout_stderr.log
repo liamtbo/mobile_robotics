@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/pioneer/pioneer.egg-info/PKG-INFO
+writing dependency_links to ../../build/pioneer/pioneer.egg-info/dependency_links.txt
+writing entry points to ../../build/pioneer/pioneer.egg-info/entry_points.txt
+writing requirements to ../../build/pioneer/pioneer.egg-info/requires.txt
+writing top-level names to ../../build/pioneer/pioneer.egg-info/top_level.txt
+reading manifest file '../../build/pioneer/pioneer.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/pioneer/pioneer.egg-info/SOURCES.txt'
+running build
+running build_py
+copying pioneer/localization.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/build/lib/pioneer
+running install
+running install_lib
+copying /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/build/lib/pioneer/localization.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer
+byte-compiling /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer/localization.py to localization.cpython-312.pyc
+running install_data
+copying pioneer/saved_maps/open_map.png -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/share/pioneer/saved_maps
+running install_egg_info
+removing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/pioneer/pioneer.egg-info to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer-0.0.0-py3.12.egg-info
+running install_scripts
+Installing driver script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+Installing localization script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+Installing mapping script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+Installing path_planning script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+Installing savemap script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+Installing world_tf script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/install/pioneer/lib/pioneer
+writing list of installed files to '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/build/pioneer/install.log'

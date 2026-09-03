@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating start_robot.egg-info
+writing start_robot.egg-info/PKG-INFO
+writing dependency_links to start_robot.egg-info/dependency_links.txt
+writing requirements to start_robot.egg-info/requires.txt
+writing top-level names to start_robot.egg-info/top_level.txt
+writing manifest file 'start_robot.egg-info/SOURCES.txt'
+reading manifest file 'start_robot.egg-info/SOURCES.txt'
+writing manifest file 'start_robot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/lib/python3.12/site-packages/start-robot.egg-link (link to .)
+
+Installed /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot
+running symlink_data
+creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index
+creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index
+creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index/packages
+symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/resource/start_robot -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/ament_index/resource_index/packages
+symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/start_robot/package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/start_robot/share/start_robot

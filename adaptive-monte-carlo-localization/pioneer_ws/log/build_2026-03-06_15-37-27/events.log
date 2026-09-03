@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000550] (-) JobUnselected: {'identifier': 'goal_target'}
+[0.000661] (-) JobUnselected: {'identifier': 'pioneer'}
+[0.000803] (-) JobUnselected: {'identifier': 'pioneer_interfaces'}
+[0.000838] (-) JobUnselected: {'identifier': 'stage'}
+[0.000867] (-) JobUnselected: {'identifier': 'stage_ros2'}
+[0.000896] (-) EventReactorShutdown: {}

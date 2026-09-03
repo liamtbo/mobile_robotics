@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+resource/start_robot
+start_robot/__init__.py
+start_robot/py.typed
+start_robot.egg-info/PKG-INFO
+start_robot.egg-info/SOURCES.txt
+start_robot.egg-info/dependency_links.txt
+start_robot.egg-info/requires.txt
+start_robot.egg-info/top_level.txt
+start_robot.egg-info/zip-safe

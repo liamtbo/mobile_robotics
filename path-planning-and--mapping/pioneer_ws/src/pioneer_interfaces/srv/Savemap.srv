@@ -1,0 +1,9 @@
+# savemap.srv
+
+
+# (empty request)
+---
+# Response
+
+nav_msgs/OccupancyGrid grid
+

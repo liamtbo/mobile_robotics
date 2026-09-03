@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/src/goal_target",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
+}

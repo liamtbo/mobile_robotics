@@ -1,0 +1,12 @@
+- service client node to save map as a greyscale image
+    - greyscale wrt probabilities
+- create navigation node
+    - reads in a created map as a param
+    - start and end as a param
+    - make it a 2d array
+    - for every dark points above a threshold, buffer the cells around it  the size of the robot
+    - implement A*
+    - save map path in image of occ grid
+    - send these points over to driver somehow
+- driver node
+    received points and execute path

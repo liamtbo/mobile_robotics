@@ -1,0 +1,221 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.7.4 (/opt/ros/kilted/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+-- Found rosidl_default_runtime: 1.7.1 (/opt/ros/kilted/share/rosidl_default_runtime/cmake)
+-- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)
+-- Found ament_cmake_ros_core: 0.14.7 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Configuring done (3.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/build/pioneer_interfaces
+[  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_symlink_pioneer_interfaces
+[  2%] Built target pioneer_interfaces__rosidl_generator_type_description
+[  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+running egg_info
+creating pioneer_interfaces.egg-info
+writing pioneer_interfaces.egg-info/PKG-INFO
+writing dependency_links to pioneer_interfaces.egg-info/dependency_links.txt
+writing top-level names to pioneer_interfaces.egg-info/top_level.txt
+writing manifest file 'pioneer_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'pioneer_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'pioneer_interfaces.egg-info/SOURCES.txt'
+[  6%] Built target ament_cmake_python_build_pioneer_interfaces_egg
+[ 11%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/getpoints__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/savemap__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/savemap__description.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/savemap__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/getpoints__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pioneer_interfaces/srv/detail/getpoints__type_support.c.o[0m
+[ 22%] [32m[1mLinking C shared library libpioneer_interfaces__rosidl_generator_c.so[0m
+[ 22%] Built target pioneer_interfaces__cpp
+[ 22%] Built target pioneer_interfaces__rosidl_generator_c
+[ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 29%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 34%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_interfaces/srv/savemap__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_interfaces/srv/getpoints__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_interfaces/srv/savemap__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_interfaces/srv/getpoints__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_interfaces/srv/detail/savemap__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_interfaces/srv/detail/getpoints__type_support.cpp.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_interfaces/srv/detail/getpoints__type_support.c.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_interfaces/srv/detail/savemap__type_support.c.o[0m
+[ 56%] [32m[1mLinking CXX shared library libpioneer_interfaces__rosidl_typesupport_c.so[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_interfaces/srv/detail/dds_fastrtps/savemap__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_interfaces/srv/detail/savemap__type_support_c.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_interfaces/srv/detail/getpoints__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/pioneer_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_interfaces/srv/detail/dds_fastrtps/getpoints__type_support.cpp.o[0m
+[ 68%] [32m[1mLinking C shared library libpioneer_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 68%] Built target pioneer_interfaces__rosidl_typesupport_c
+[ 68%] Built target pioneer_interfaces__rosidl_typesupport_introspection_c
+[ 70%] [32m[1mLinking CXX shared library libpioneer_interfaces__rosidl_typesupport_cpp.so[0m
+[ 70%] Built target pioneer_interfaces__rosidl_typesupport_cpp
+[ 72%] [32m[1mLinking CXX shared library libpioneer_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 72%] Built target pioneer_interfaces__rosidl_typesupport_introspection_cpp
+[ 75%] [32m[1mLinking CXX shared library libpioneer_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 75%] Built target pioneer_interfaces__rosidl_typesupport_fastrtps_c
+[ 77%] [32m[1mLinking CXX shared library libpioneer_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 77%] Built target pioneer_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 77%] Built target pioneer_interfaces
+[ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 79%] Built target pioneer_interfaces__py
+[ 81%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pioneer_interfaces/srv/_savemap_s.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/pioneer_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pioneer_interfaces/srv/_getpoints_s.c.o[0m
+[ 86%] [32m[1mLinking C shared library libpioneer_interfaces__rosidl_generator_py.so[0m
+[ 86%] Built target pioneer_interfaces__rosidl_generator_py
+[ 88%] [32mBuilding C object CMakeFiles/pioneer_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/pioneer_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/pioneer_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32m[1mLinking C shared module rosidl_generator_py/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[100%] Built target pioneer_interfaces_s__rosidl_typesupport_c
+[100%] Built target pioneer_interfaces_s__rosidl_typesupport_introspection_c
+[100%] Built target pioneer_interfaces_s__rosidl_typesupport_fastrtps_c
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/ament_index/resource_index/rosidl_interfaces/pioneer_interfaces
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Savemap.json
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Getpoints.json
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__functions.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__struct.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__type_support.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__functions.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__struct.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__type_support.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/getpoints.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/savemap.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/library_path.sh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/library_path.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__builder.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__struct.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__traits.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__type_support.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__builder.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__struct.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__traits.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__type_support.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/getpoints.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/savemap.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/getpoints__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/include/pioneer_interfaces/pioneer_interfaces/srv/detail/savemap__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/pythonpath.sh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/pythonpath.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/__init__.py
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/_pioneer_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_c.so
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/__init__.py
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_getpoints.py
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_getpoints_s.c
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_savemap.py
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_savemap_s.c
+-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/pioneer_interfaces_s__rosidl_typesupport_c.so
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Savemap.idl
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Getpoints.idl
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Savemap.srv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/srv/Getpoints.srv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/ament_index/resource_index/package_run_dependencies/pioneer_interfaces
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/ament_index/resource_index/parent_prefix_path/pioneer_interfaces
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/path.sh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/environment/path.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/local_setup.bash
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/local_setup.sh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/local_setup.zsh
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/local_setup.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/package.dsv
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/ament_index/resource_index/packages/pioneer_interfaces
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfacesConfig.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfacesConfig-version.cmake
+-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/package.xml
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_typesupport_cpp.so" to ""
+Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces'...
+Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/__init__.py'...
+Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv'...
+Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/__init__.py'...
+Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_getpoints.py'...
+Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/python3.12/site-packages/pioneer_interfaces/srv/_savemap.py'...
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/lib/libpioneer_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/pioneer_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_3/pioneer_ws/install/pioneer_interfaces/share/pioneer_interfaces/cmake/export_pioneer_interfaces__rosidl_generator_pyExport-noconfig.cmake

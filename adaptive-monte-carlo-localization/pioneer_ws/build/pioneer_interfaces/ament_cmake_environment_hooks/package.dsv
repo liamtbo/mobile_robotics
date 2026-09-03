@@ -1,0 +1,4 @@
+source;share/pioneer_interfaces/local_setup.bash
+source;share/pioneer_interfaces/local_setup.dsv
+source;share/pioneer_interfaces/local_setup.sh
+source;share/pioneer_interfaces/local_setup.zsh

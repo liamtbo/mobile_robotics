@@ -1,0 +1,29 @@
+
+cd /home/liam-bouffard/Desktop/rob599_mobile_robotics/Homework_4/pioneer_ws/;
+source install/setup.bash;
+
+rm -rf build install log; 
+
+
+
+colcon build --symlink-install; 
+
+ros2 launch stage_ros2 stage.launch.py world:=empty enforce_prefixes:=false one_tf_tree:=true;
+
+ros2 run pioneer mapping
+
+ros2 run pioneer savemap
+
+ros2 run pioneer path_planning
+
+ros2 run pioneer driver;
+
+ros2 run pioneer localization;
+
+ros2 run pioneer world_tf;
+
+ros2 pkg executables pioneer
+
+rviz2
+
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.5}}"
