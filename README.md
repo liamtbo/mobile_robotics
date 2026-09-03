@@ -5,3 +5,7 @@
 <video src="./videos/obstacle-avoidance.mp4" controls width="600"></video>
 
 <video src="./videos/path_planning-action_server.mp4" controls width="600"></video>
+
+<video controls width="600">
+  <source src="./videos/AMCL.mp4" type="video/mp4">
+</video>
